@@ -10,7 +10,6 @@ script:
 - ./link-verifier > link-verifier-output.txt
 - grep -B 1 FAILED link-verifier-output.txt
 - msbuild ./src/DeepEqual.sln /p:Configuration=Travis
-- ls ./DeepEqual/bin/x64/Travis
 
 deploy:
   provider: pages

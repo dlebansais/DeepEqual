@@ -45,7 +45,7 @@ artifacts:
 test: off
 
 deploy:
-  release: DeepEqual-v2.0.1
+  release: DeepEqual-{build}
   description: 'Automatic Release Deployment'
   provider: GitHub
   auth_token:
@@ -54,6 +54,6 @@ deploy:
   draft: true
   prerelease: false
   on:
-    branch: master                 # release from master branch only
+    branch: master
     APPVEYOR_REPO_TAG: false
 #    APPVEYOR_REPO_TAG: true        # deploy on tag push only

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <RootNamespace>DeepEqual.Test.VB</RootNamespace>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>

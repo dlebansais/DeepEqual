@@ -20,4 +20,3 @@ deploy:
   email: "github-pages-deploy@travis-ci.org"
   on:
     branch: master
-

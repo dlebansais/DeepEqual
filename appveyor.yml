@@ -23,8 +23,9 @@ before_build:
 
 build:
   project: ./src/DeepEqual.sln
-  platform: x64
-  configuration: Release
+
+platform: x64
+configuration: Release
 
 artifacts:
   - path: src/DeepEqual/bin

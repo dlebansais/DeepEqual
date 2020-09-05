@@ -41,14 +41,11 @@ artifacts:
   - path: src/DeepEqual/bin
     name: DeepEqual
 
-test:
 # disable tests
-  assemblies:
-    only:
-      - test-assembly-A.dll
+test: off
 
 deploy:
-  release: DeepEqual-v2.0.0
+  release: DeepEqual-v2.0.1
   description: 'Automatic Release Deployment'
   provider: GitHub
   auth_token:

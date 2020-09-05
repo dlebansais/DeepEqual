@@ -38,8 +38,14 @@ platform: x64
 configuration: Release
 
 artifacts:
-  - path: ./src/DeepEqual/bin
+  - path: src/DeepEqual/bin
     name: DeepEqual
+
+test:
+# disable tests
+  assemblies:
+    only:
+      - test-assembly-A.dll
 
 deploy:
   release: DeepEqual-v2.0.0

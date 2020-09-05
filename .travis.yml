@@ -1,5 +1,5 @@
 language: csharp
-solution: DeepEqual.sln
+solution: ./src/DeepEqual.sln
 
 before_script:
   - wget https://github.com/bmuschko/link-verifier/releases/download/v0.7/link-verifier-0.7-linux-amd64.tar.gz -O /tmp/link-verifier.tar.gz
@@ -9,7 +9,7 @@ before_script:
 script:
 - ./link-verifier > link-verifier-output.txt
 - grep -B 1 FAILED link-verifier-output.txt
-- msbuild DeepEqual.sln /p:Configuration=Travis
+- msbuild ./src/DeepEqual.sln /p:Configuration=Travis
 
 deploy:
   provider: pages

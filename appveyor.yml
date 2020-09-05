@@ -38,7 +38,7 @@ platform: x64
 configuration: Release
 
 artifacts:
-  - path: DeepEqual.zip
+  - path: bin
     name: DeepEqual
 
 deploy:

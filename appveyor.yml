@@ -9,6 +9,9 @@ branches:
 skip_commits:
   message: "*[skip ci]*"
 
+# Start builds on tags only
+skip_non_tags: true
+
 image: Visual Studio 2019
 
 # scripts that are called at very beginning, before repo cloning
@@ -29,23 +32,33 @@ configuration:
   - Debug
   - Release
 
-artifacts:
-  - path: src/DeepEqual/bin
-    name: DeepEqual
+after_build:
+  - dotnet pack --configuration Release /p:Platform=x64 src/DeepEqual/DeepEqual.csproj
 
 # disable tests
 test: off
 
-deploy:
-  release: DeepEqual-%APPVEYOR_BUILD_VERSION%-%APPVEYOR_JOB_NUMBER%
-  description: 'Automatic Deployment'
-  provider: GitHub
-  auth_token:
-    secure: dUpQSnUT5/m88z1BqHNnRjaxxZzz09CmyqFJr/cAyWjqKeLgnKunlIZlEKAXlNIm
-  artifact: DeepEqual
-  draft: true
-  prerelease: false
-  on:
-    branch: master
-    APPVEYOR_REPO_TAG: true        # deploy on tag push only
+artifacts:
+  - path: src/DeepEqual/bin
+    name: DeepEqual
+  - path: src/DeepEqual/bin/x64/Release/DeepEqual.*.nupkg
+    name: DeepEqual-Package
 
+deploy:
+  - provider: GitHub
+    release: DeepEqual-%APPVEYOR_BUILD_VERSION%-%APPVEYOR_JOB_NUMBER%
+    description: 'Automatic Deployment'
+    auth_token:
+      secure: dUpQSnUT5/m88z1BqHNnRjaxxZzz09CmyqFJr/cAyWjqKeLgnKunlIZlEKAXlNIm
+    artifact: DeepEqual
+    draft: true
+    prerelease: false
+    on:
+      branch: master
+  - provider: NuGet
+    server: https://nuget.pkg.github.com/dlebansais/index.json
+    artifact: DeepEqual-Package
+    username: dlebansais
+    api_key:
+      secure: GOksqNi8I7Vs6dcsfosJvSa9vMaZH3zLQJjnx+ruJy6ZeLF075mifj4MdRI34E8W
+    skip_symbols: true

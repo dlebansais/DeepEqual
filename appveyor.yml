@@ -38,7 +38,7 @@ test: off
 artifacts:
   - path: src/DeepEqual/bin
     name: DeepEqual
-  - path: src/DeepEqual/bin/x64/Release/DeepEqual.*.nupkg
+  - path: src/DeepEqual/bin/x64/Release/DeepEqual-Forked.*.nupkg
     name: DeepEqual-Package
 
 deploy:

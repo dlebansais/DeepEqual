@@ -40,16 +40,16 @@ artifacts:
     name: DeepEqual-Package
 
 deploy:
-  - provider: GitHub
-    release: DeepEqual-%APPVEYOR_BUILD_VERSION%-%APPVEYOR_JOB_NUMBER%
-    description: 'Automatic Deployment'
-    auth_token:
-      secure: dUpQSnUT5/m88z1BqHNnRjaxxZzz09CmyqFJr/cAyWjqKeLgnKunlIZlEKAXlNIm
-    artifact: DeepEqual
-    draft: true
-    prerelease: false
-    on:
-      branch: master
+#  - provider: GitHub
+#    release: DeepEqual-%APPVEYOR_BUILD_VERSION%-%APPVEYOR_JOB_NUMBER%
+#    description: 'Automatic Deployment'
+#    auth_token:
+#      secure: dUpQSnUT5/m88z1BqHNnRjaxxZzz09CmyqFJr/cAyWjqKeLgnKunlIZlEKAXlNIm
+#    artifact: DeepEqual
+#    draft: true
+#    prerelease: false
+#    on:
+#      branch: master
   - provider: NuGet
     server: https://nuget.pkg.github.com/dlebansais/index.json
     artifact: DeepEqual-Package

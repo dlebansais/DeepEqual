@@ -10,10 +10,8 @@
     <Copyright>James Foster 2018</Copyright>
     <PackageTags>deepequal deep equal equality comparison compare</PackageTags>
     
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>../DeepEqual.snk</AssemblyOriginatorKeyFile>
     <Platforms>x64</Platforms>
-    <Configurations>Debug;Release;Travis</Configurations>
+    <Configurations>Release</Configurations>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>DeepEqual-Forked</PackageId>
   </PropertyGroup>

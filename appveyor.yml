@@ -22,12 +22,7 @@ before_build:
   - nuget restore ./src/DeepEqual.sln
 
 build:
-  project: ./src/DeepEqual.sln
-
-platform: x64
-configuration:
-  - Debug
-  - Release
+  project: build_all.xml
 
 after_build:
   - dotnet pack --configuration Release /p:Platform=x64 src/DeepEqual/DeepEqual.csproj

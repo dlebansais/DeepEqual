@@ -20,30 +20,24 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
-		Travis|x64 = Travis|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Debug|x64.ActiveCfg = Debug|x64
-		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Debug|x64.Build.0 = Debug|x64
+		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Debug|x64.ActiveCfg = Release|x64
+		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Debug|x64.Build.0 = Release|x64
 		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Release|x64.ActiveCfg = Release|x64
 		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Release|x64.Build.0 = Release|x64
-		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Travis|x64.ActiveCfg = Travis|x64
-		{5125DCF0-FAD0-412F-B06C-FF4CE289A844}.Travis|x64.Build.0 = Travis|x64
 		{941815E1-B504-4C64-B6E6-4E8C68421516}.Debug|x64.ActiveCfg = Debug|x64
 		{941815E1-B504-4C64-B6E6-4E8C68421516}.Debug|x64.Build.0 = Debug|x64
 		{941815E1-B504-4C64-B6E6-4E8C68421516}.Release|x64.ActiveCfg = Release|x64
 		{941815E1-B504-4C64-B6E6-4E8C68421516}.Release|x64.Build.0 = Release|x64
-		{941815E1-B504-4C64-B6E6-4E8C68421516}.Travis|x64.ActiveCfg = Release|x64
 		{E85D1A5D-F779-474F-857A-2A0D1AAB9880}.Debug|x64.ActiveCfg = Debug|x64
 		{E85D1A5D-F779-474F-857A-2A0D1AAB9880}.Debug|x64.Build.0 = Debug|x64
 		{E85D1A5D-F779-474F-857A-2A0D1AAB9880}.Release|x64.ActiveCfg = Release|x64
 		{E85D1A5D-F779-474F-857A-2A0D1AAB9880}.Release|x64.Build.0 = Release|x64
-		{E85D1A5D-F779-474F-857A-2A0D1AAB9880}.Travis|x64.ActiveCfg = Release|x64
 		{4DAB6570-DF99-4574-8BB0-99573D9C6224}.Debug|x64.ActiveCfg = Debug|x64
 		{4DAB6570-DF99-4574-8BB0-99573D9C6224}.Debug|x64.Build.0 = Debug|x64
 		{4DAB6570-DF99-4574-8BB0-99573D9C6224}.Release|x64.ActiveCfg = Release|x64
 		{4DAB6570-DF99-4574-8BB0-99573D9C6224}.Release|x64.Build.0 = Release|x64
-		{4DAB6570-DF99-4574-8BB0-99573D9C6224}.Travis|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

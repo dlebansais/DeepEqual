@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net48;netcoreapp3.1</TargetFrameworks>
-    <Version>2.0.0.1</Version>
+    <Version>2.0.1.1</Version>
     <Description>An extensible deep comparison library for .NET</Description>
     <Authors>James Foster</Authors>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' OR '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
